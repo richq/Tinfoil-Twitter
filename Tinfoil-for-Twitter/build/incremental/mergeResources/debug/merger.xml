@@ -144,9 +144,7 @@ Force desktop site
                 </string>
                 <string name="menu_jump_top" >Jump to top
                 </string>
-                <string name="menu_news_feed" >News feed
-                </string>
-                <string name="menu_messages" >Messages
+                <string name="menu_messages" >Direct Messages
                 </string>
                 <string name="menu_preferences" >Preferences
                 </string>
@@ -159,6 +157,8 @@ Force desktop site
                 <string name="prefs_proxy_port" >Proxy port
                 </string>
                 <string name="pref_cat_access" >Twitter access
+                </string>
+                <string name="menu_home" >Home
                 </string>
 
                 <array name="prefs_mobile_site_list_values" >
@@ -302,8 +302,6 @@ sans
                 </string>
                 <string name="menu_preferences" >Einstellungen
                 </string>
-                <string name="menu_news_feed" >Neuigkeiten
-                </string>
                 <string name="pref_cat_access" >Zugriff
                 </string>
                 <string name="lbl_dialog_ok" >OK
@@ -364,6 +362,8 @@ desktop
                 <string name="menu_desktop" >Desktop
                 </string>
                 <string name="menu_notifications" >Benachrichtigungen
+                </string>
+                <string name="menu_home" >Neuigkeiten
                 </string>
                 <string name="pref_logcat_sry" >System-Logging aktivieren. Hilfreich, um dem Entwickler bei der Problembehebung zu helfen
                 </string>

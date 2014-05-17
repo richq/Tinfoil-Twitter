@@ -56,9 +56,9 @@ public final class R {
         public static final int layout_main=0x7f0a001f;
         public static final int menu_about=0x7f0a0019;
         public static final int menu_drawer_right=0x7f0a0000;
+        public static final int menu_item_home=0x7f0a000a;
         public static final int menu_item_jump_to_top=0x7f0a0004;
         public static final int menu_item_messages=0x7f0a0010;
-        public static final int menu_item_newsfeed=0x7f0a000a;
         public static final int menu_item_refresh=0x7f0a0007;
         public static final int menu_items_notifications=0x7f0a000d;
         public static final int menu_kill=0x7f0a001c;
@@ -100,10 +100,10 @@ public final class R {
         public static final int menu_copy_url=0x7f08000a;
         public static final int menu_desktop=0x7f08000b;
         public static final int menu_exit=0x7f08000c;
-        public static final int menu_jump_top=0x7f08000d;
-        public static final int menu_messages=0x7f08000e;
-        public static final int menu_mobile=0x7f08000f;
-        public static final int menu_news_feed=0x7f080010;
+        public static final int menu_home=0x7f08000d;
+        public static final int menu_jump_top=0x7f08000e;
+        public static final int menu_messages=0x7f08000f;
+        public static final int menu_mobile=0x7f080010;
         public static final int menu_notifications=0x7f080011;
         public static final int menu_preferences=0x7f080012;
         public static final int menu_refresh=0x7f080013;

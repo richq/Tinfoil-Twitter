@@ -64,14 +64,15 @@ public abstract class BaseTwitterWebViewActivity extends Activity implements
     // Constants
     private final static String LOG_TAG = "BaseTwitterWebViewActivity";
     protected final static int RESULT_CODE_FILE_UPLOAD = 1001;
-    protected final static String INIT_URL_MOBILE = "https://m.facebook.com";
-    protected final static String INIT_URL_DESKTOP = "https://www.facebook.com";
-    protected final static String URL_PAGE_NOTIFICATIONS = "/notifications.php";
+    protected final static String INIT_URL_MOBILE = "https://m.twitter.com";
+    protected final static String INIT_URL_DESKTOP = "https://www.twitter.com";
+    protected final static String URL_MOBILE_PAGE_NOTIFICATIONS = "/i/connect";
+    protected final static String URL_DESKTOP_PAGE_NOTIFICATIONS = "/i/notifications";
     protected final static String URL_PAGE_MESSAGES = "/messages";
 
     // URL for Sharing Links
     // u = url & t = title
-    protected final static String URL_PAGE_SHARE_LINKS = "/sharer.php?u=%s&t=%s";
+    protected final static String URL_PAGE_SHARE_LINKS = "/intent/tweet?url=%s&text=%s";
 
     // Desktop user agent (Google Chrome's user agent from a MacBook running 10.9.1
     protected static final String USER_AGENT_DESKTOP = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) " +
@@ -226,7 +227,7 @@ public abstract class BaseTwitterWebViewActivity extends Activity implements
     }
 
     /**
-     * Set a proxy for the {@link com.danvelazco.fbwrapper.webview.FacebookWebView}
+     * Set a proxy for the {@link com.mill_e.twitterwrapper.webview.TwitterWebView}
      *
      * @param host {@link String}
      * @param port {@link int}

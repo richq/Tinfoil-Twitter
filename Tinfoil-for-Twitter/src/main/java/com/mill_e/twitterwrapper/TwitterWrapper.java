@@ -33,6 +33,7 @@ public class TwitterWrapper extends BaseTwitterWebViewActivity {
     private DrawerLayout mDrawerLayout = null;
     private RelativeLayout mWebViewContainer = null;
     private String mDomainToUse = INIT_URL_MOBILE;
+    private String mNotifications = URL_MOBILE_PAGE_NOTIFICATIONS;
 
     // Preferences stuff
     private SharedPreferences mSharedPreferences = null;
@@ -85,7 +86,7 @@ public class TwitterWrapper extends BaseTwitterWebViewActivity {
 
         // Open the proper URL in case the user clicked on a link that brought us here
         if (intent.getData() != null) {
-            Logger.d(LOG_TAG, "Loading a specific Facebook URL a user " +
+            Logger.d(LOG_TAG, "Loading a specific Twitter URL a user " +
                     "clicked on somewhere else");
             loadNewPage(intent.getData().toString());
             return;
@@ -98,7 +99,7 @@ public class TwitterWrapper extends BaseTwitterWebViewActivity {
             restoreWebView(savedInstanceState);
         } else {
             // Load the URL depending on the type of device or preference
-            Logger.d(LOG_TAG, "Loading the init Facebook URL");
+            Logger.d(LOG_TAG, "Loading the init Twitter URL");
             loadNewPage(mDomainToUse);
         }
     }
@@ -133,7 +134,7 @@ public class TwitterWrapper extends BaseTwitterWebViewActivity {
         findViewById(R.id.menu_drawer_right).setOnClickListener(buttonsListener);
         findViewById(R.id.menu_item_jump_to_top).setOnClickListener(buttonsListener);
         findViewById(R.id.menu_item_refresh).setOnClickListener(buttonsListener);
-        findViewById(R.id.menu_item_newsfeed).setOnClickListener(buttonsListener);
+        findViewById(R.id.menu_item_home).setOnClickListener(buttonsListener);
         findViewById(R.id.menu_items_notifications).setOnClickListener(buttonsListener);
         findViewById(R.id.menu_item_messages).setOnClickListener(buttonsListener);
         findViewById(R.id.menu_share_this).setOnClickListener(buttonsListener);
@@ -231,13 +232,13 @@ public class TwitterWrapper extends BaseTwitterWebViewActivity {
         // Force or detect the site mode to load
         if (mode.equalsIgnoreCase(TwitterPreferences.SITE_MODE_MOBILE)) {
             // Force the webview config to mobile
-            setupFacebookWebViewConfig(true, true);
+            setupTwitterWebViewConfig(true, true);
         } else if (mode.equalsIgnoreCase(TwitterPreferences.SITE_MODE_DESKTOP)) {
             // Force the webview config to desktop mode
-            setupFacebookWebViewConfig(true, false);
+            setupTwitterWebViewConfig(true, false);
         } else {
             // Do not force, allow us to auto-detect what mode to use
-            setupFacebookWebViewConfig(false, true);
+            setupTwitterWebViewConfig(false, true);
         }
 
         // If we haven't shown the new menu drawer to the user, auto open it
@@ -263,13 +264,15 @@ public class TwitterWrapper extends BaseTwitterWebViewActivity {
      * @param mobile {@link boolean}
      *               whether to use the mobile or desktop site.
      */
-    private void setupFacebookWebViewConfig(boolean force, boolean mobile) {
+    private void setupTwitterWebViewConfig(boolean force, boolean mobile) {
         if (force && !mobile) {
             // Force the desktop site to load
             mDomainToUse = INIT_URL_DESKTOP;
+            mNotifications = URL_DESKTOP_PAGE_NOTIFICATIONS;
         } else {
             // Otherwise, just load the mobile site for all devices
             mDomainToUse = INIT_URL_MOBILE;
+            mNotifications = URL_MOBILE_PAGE_NOTIFICATIONS;
         }
 
         // Set the user agent depending on config
@@ -318,11 +321,11 @@ public class TwitterWrapper extends BaseTwitterWebViewActivity {
                 case R.id.menu_item_refresh:
                     refreshCurrentPage();
                     break;
-                case R.id.menu_item_newsfeed:
+                case R.id.menu_item_home:
                     loadNewPage(mDomainToUse);
                     break;
                 case R.id.menu_items_notifications:
-                    loadNewPage(mDomainToUse + URL_PAGE_NOTIFICATIONS);
+                    loadNewPage(mDomainToUse + mNotifications);
                     break;
                 case R.id.menu_item_messages:
                 	loadNewPage(mDomainToUse + URL_PAGE_MESSAGES);

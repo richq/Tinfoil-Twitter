@@ -117,11 +117,11 @@ public class TwitterWebView extends WebView {
      * Initialize this WebView and set default values
      */
     private void initializeWebView() {
-        // Create a new instance of FutebolWebViewClient and keep a reference to it
+        // Create a new instance of TwitterWebViewClient and keep a reference to it
         mWebViewClient = new TwitterWebViewClient();
         setWebViewClient(mWebViewClient);
 
-        // New instance of FutebolWebChromeClient and keep a reference to it
+        // New instance of TwitterWebChromeClient and keep a reference to it
         mWebChromeClient = new TwitterWebChromeClient(mContext);
         setWebChromeClient(mWebChromeClient);
 

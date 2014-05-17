@@ -119,8 +119,8 @@ public class TwitterWebViewClient extends WebViewClient {
 
         if (domain != null) {
             // Let this WebView open the URL
-            // TODO: Check the proper domain names that facebook uses or find another way
-            if (domain.contains("facebook") || domain.contains("fb")) {
+            // TODO: Check the proper domain names that twitter uses
+            if (domain.contains("twitter")) { //|| domain.contains("fb")) {
                 Logger.d(getClass().getSimpleName(), "This URL should be loaded internally. Let it load.");
                 view.loadUrl(url);
                 return false;

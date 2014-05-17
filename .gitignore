@@ -1,0 +1,7 @@
+.gradle/*
+.idea/*
+local.properties
+Tinfoil-for-Twitter/.idea/*
+Tinfoil-for-Twitter/build/classes/*
+Tinfoil-for-Twitter/build/apk/*
+Tinfoil-for-Twitter/build/dex/debug/classes.dex

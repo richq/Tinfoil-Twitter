@@ -121,7 +121,7 @@
 
     <!-- Menu item: News feed -->
     <RelativeLayout
-        android:id="@+id/menu_item_newsfeed"
+        android:id="@+id/menu_item_home"
         android:layout_width="match_parent"
         android:layout_height="@dimen/navigation_drawer_items_height"
         android:padding="@dimen/navigation_drawer_items_padding"
@@ -146,7 +146,7 @@
             android:layout_marginLeft="@dimen/navigation_drawer_items_icon_title_margin"
             android:gravity="left"
             style="@style/MenuDrawerTextStyle"
-            android:text="@string/menu_news_feed"/>
+            android:text="@string/menu_home"/>
 
     </RelativeLayout>
 
