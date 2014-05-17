@@ -57,11 +57,11 @@
                 </color>
                 <color name="light_gray" >#ededed
                 </color>
-                <color name="dark_gray" >#555555
+                <color name="gray" >#cdcdcd
                 </color>
                 <color name="light_gray_alt" >#dddddd
                 </color>
-                <color name="gray" >#cdcdcd
+                <color name="dark_gray" >#555555
                 </color>
                 <color name="holo" >#33b5e5
                 </color>
@@ -77,19 +77,19 @@
                 </dimen>
                 <dimen name="navigation_drawer_width" >240dp
                 </dimen>
-                <dimen name="navigation_drawer_icon_size" >30dp
-                </dimen>
                 <dimen name="navigation_drawer_items_icon_title_margin" >5dp
+                </dimen>
+                <dimen name="navigation_drawer_icon_size" >30dp
                 </dimen>
                 <dimen name="navigation_drawer_items_height" >50dp
                 </dimen>
                 <dimen name="navigation_drawer_items_text_size" >17sp
                 </dimen>
-                <dimen name="navigation_drawer_app_icon_size" >42dp
+                <dimen name="webview_top_progress_bar" >3dp
                 </dimen>
                 <dimen name="loading_spinner_top_padding" >5dip
                 </dimen>
-                <dimen name="webview_top_progress_bar" >3dp
+                <dimen name="navigation_drawer_app_icon_size" >42dp
                 </dimen>
             </file>
             <file
@@ -112,19 +112,19 @@ Force desktop site
                     </item>
                 </array>
 
-                <string name="prefs_proxy_host" >Proxy host
-                </string>
                 <string name="lbl_dialog_alert" >Alert
+                </string>
+                <string name="prefs_proxy_host" >Proxy host
                 </string>
                 <string name="menu_desktop" >Desktop
                 </string>
-                <string name="prefs_allow_checkins" >Allow Check-ins
-                </string>
                 <string name="lbl_dialog_ok" >OK
                 </string>
-                <string name="market_orbot" >market://search?q=pname:org.torproject.android
+                <string name="prefs_allow_checkins" >Allow Check-ins
                 </string>
                 <string name="pref_about" >About
+                </string>
+                <string name="market_orbot" >market://search?q=pname:org.torproject.android
                 </string>
                 <string name="prefs_mobile_site_sry" >Force the use of the mobile or desktop site
                 </string>
@@ -160,6 +160,8 @@ Force desktop site
                 </string>
                 <string name="menu_home" >Home
                 </string>
+                <string name="lbl_dialog_close" >Close
+                </string>
 
                 <array name="prefs_mobile_site_list_values" >
                     <item>
@@ -173,8 +175,6 @@ desktop
                     </item>
                 </array>
 
-                <string name="lbl_dialog_close" >Close
-                </string>
                 <string name="upload_file_choose" >Choose file
                 </string>
                 <string name="pref_hide_ab" >Auto-hide ActionBar
@@ -183,43 +183,45 @@ desktop
                 </string>
                 <string name="app_name_short" >Tinfoil
                 </string>
-                <string name="txt_about" >\nDeveloped by Daniel Velazco.
-\nvelazcod@gmail.com
+                <string name="menu_refresh" >Refresh
+                </string>
+                <string name="txt_about" >\nDeveloped by James Vento.
+\ntuckervento@gmail.com\n
+\nForked from Tinfoil for Facebook, developed by Daniel Velazco.
+\nhttps://play.google.com/store/apps/details?id=com.danvelazco.fbwrapper
 \nhttp://www.danvelazco.com\n
 \n
 \nSource code:
-\nhttps://github.com/velazcod/Tinfoil-Facebook\n
+\nhttps://github.com/tuckervento/Tinfoil-Twitter\n
 \n
-\nThis app is for those users that require a Tinfoil Hat when logging in to Facebook. It creates a sandbox for facebook\'s mobile site. Requires INTERNET permissions, and if you are skeptic about it, feel free to check the source code listed above. Coarse location permissions are required but location is not used unless you turn \"Allow Check-ins\" in the preferences.\n
+\nThis app is for those users that require a Tinfoil Hat when logging in to Twitter. It creates a sandbox for Twitter\'s mobile site. Requires INTERNET permissions, and if you are skeptic about it, feel free to check the source code listed above. Coarse location permissions are required but location is not used unless you turn \"Allow Check-ins\" in the preferences.\n
 \n
-                </string>
-                <string name="menu_refresh" >Refresh
-                </string>
-                <string name="menu_mobile" >Mobile
                 </string>
                 <string name="menu_exit" >Kill
                 </string>
-                <string name="pref_about_sry" >Written by Daniel Velazco. Click here for more information.
+                <string name="menu_mobile" >Mobile
+                </string>
+                <string name="pref_about_sry" >Written by James Vento. Click here for more information.
                 </string>
                 <string name="share_action" >Share current page
                 </string>
                 <string name="prefs_enable_proxy_sry" >Configure proxy for network requests.
                 </string>
-                <string name="txt_checkins_disables" >\nFacebook is trying to access your location.\n
+                <string name="pref_cat_proxy" >Proxy
+                </string>
+                <string name="txt_checkins_disables" >\nTwitter is trying to access your location.\n
 \nMost likely you are trying to \"Check-in\" to a specific place. While Tinfoil has optional permissions used for this, it is disabled by default.\n
 \nYou can enable this feature by going to the Preferences and checking the option that says \"Allow Check-ins.\"\n
 \nTinfoil only shares \"Coarse location\", this doesn\'t use the GPS, only Network and Wi-fi location in order to save battery.\n
 \n
                 </string>
-                <string name="pref_cat_proxy" >Proxy
-                </string>
                 <string name="app_name" >Tinfoil for Twitter
                 </string>
                 <string name="prefs_open_links_inside" >Open links inside app
                 </string>
-                <string name="prefs_enable_proxy" >Enable proxy
-                </string>
                 <string name="prefs_open_links_inside_sry" >Any links being opened from the mobile app will open from within the app instead of the browser
+                </string>
+                <string name="prefs_enable_proxy" >Enable proxy
                 </string>
                 <string name="menu_copy_url" >Copy URL
                 </string>
@@ -227,11 +229,6 @@ desktop
             <file
                 path="C:\Users\Owner\Dropbox\Code\Tinfoil-Twitter\Tinfoil-for-Twitter\src\main\res\values\styles.xml"
                 qualifiers="" >
-
-                <style
-                    name="AppBasePreferencesTheme"
-                    parent="android:Theme.Light" >
-                </style>
 
                 <style
                     name="AppBaseTheme"
@@ -242,6 +239,21 @@ desktop
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
                     -->
+                </style>
+
+                <style
+                    name="AppBasePreferencesTheme"
+                    parent="android:Theme.Light" >
+                </style>
+
+                <style
+                    name="Theme.Tinfoil"
+                    parent="AppBaseTheme" >
+
+                    <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+                    <item name="android:background">
+@null
+                    </item>
                 </style>
 
                 <style
@@ -258,16 +270,6 @@ sans-serif
                     </item>
                     <item name="android:typeface">
 sans
-                    </item>
-                </style>
-
-                <style
-                    name="Theme.Tinfoil"
-                    parent="AppBaseTheme" >
-
-                    <!-- All customizations that are NOT specific to a particular API-level can go here. -->
-                    <item name="android:background">
-@null
                     </item>
                 </style>
 
@@ -296,9 +298,9 @@ sans
                 </string>
                 <string name="lbl_dialog_close" >Schließen
                 </string>
-                <string name="pref_about" >Über
-                </string>
                 <string name="prefs_open_links_inside" >Links in der App öffnen
+                </string>
+                <string name="pref_about" >Über
                 </string>
                 <string name="menu_preferences" >Einstellungen
                 </string>
@@ -323,14 +325,16 @@ desktop
                 </string>
                 <string name="prefs_mobile_site_sry" >Nutzung der mobilen oder der Desktop-Version von Facebook erzwingen.
                 </string>
-                <string name="txt_about" >\nEntwickelt von Daniel Velazco.
-\nvelazcod@gmail.com
+                <string name="txt_about" >\nEntwickelt von James Vento.
+\ntuckervento@gmail.com\n
+\nForked from Tinfoil für Facebook, entwickelt von  Daniel Velazco.
+\nhttps://play.google.com/store/apps/details?id=com.danvelazco.fbwrapper
 \nhttp://www.danvelazco.com\n
 \n
 \nQuellcode:
 \nhttps://github.com/velazcod/Tinfoil-Facebook\n
 \n
-\nDiese App ist für Leute, die einen Aluhut (englisch: \"tin foil hat\") für Facebook brauchen. Sie benutzt eine Sandbox (isolierter Bereich ohne Zugriff auf persönliche Daten, z.B. Adressbuch), in der die mobile Internetseite von Facebook läuft. Benötigt die Berechtigung für Internetzugriff, und wer skeptisch ist, kann sich gerne den Quellcode ansehen (s. oben). Die Berechtigung für Standortbestimmung wird nur benutzt, falls \"Einchecken erlauben\" in den Einstellungen aktiviert ist.\n
+\nDiese App ist für Leute, die einen Aluhut (englisch: \"tin foil hat\") für Twitter brauchen. Sie benutzt eine Sandbox (isolierter Bereich ohne Zugriff auf persönliche Daten, z.B. Adressbuch), in der die mobile Internetseite von Twitter läuft. Benötigt die Berechtigung für Internetzugriff, und wer skeptisch ist, kann sich gerne den Quellcode ansehen (s. oben). Die Berechtigung für Standortbestimmung wird nur benutzt, falls \"Einchecken erlauben\" in den Einstellungen aktiviert ist.\n
 \n
                 </string>
                 <string name="pref_logcat" >System-Logging
@@ -343,15 +347,15 @@ desktop
                 </string>
                 <string name="menu_jump_top" >Nach oben springen
                 </string>
-                <string name="pref_about_sry" >Geschrieben von Daniel Velazco. Hier klicken für weitere Infos.
+                <string name="pref_about_sry" >Geschrieben von James Vento. Hier klicken für weitere Infos.
                 </string>
-                <string name="app_name" >Tinfoil für Facebook
+                <string name="app_name" >Tinfoil für Twitter
                 </string>
                 <string name="menu_share" >Teilen
                 </string>
                 <string name="prefs_allow_checkins_sry" >Erlaubt der App, den ungefähren Standort zu benutzen, um mit Facebook einchecken zu können
                 </string>
-                <string name="txt_checkins_disables" >\nFacebook versucht, auf deinen Standort zuzugreifen.\n
+                <string name="txt_checkins_disables" >\nTwitter versucht, auf deinen Standort zuzugreifen.\n
 \nWahrscheinlich versuchst du gerade an einem bestimmten Ort \"einzuchecken\". Tinfoil hat eine optionale Berechtigung dafür, die aber standardmäßig deaktiviert ist.\n
 \nDu kannst diese Funktion in den Einstellungen unter \"Einchecken erlauben\" aktivieren.\n
 \nTinfoil bestimmt den Standort nur durch W-LAN und Funknetz, um Akku zu sparen. Das ist allerdings nicht so genau wie die echte GPS-Position.\n
@@ -359,19 +363,19 @@ desktop
                 </string>
                 <string name="pref_hide_ab" >ActionBar ausblenden
                 </string>
-                <string name="menu_desktop" >Desktop
-                </string>
                 <string name="menu_notifications" >Benachrichtigungen
                 </string>
-                <string name="menu_home" >Neuigkeiten
-                </string>
-                <string name="pref_logcat_sry" >System-Logging aktivieren. Hilfreich, um dem Entwickler bei der Problembehebung zu helfen
+                <string name="menu_desktop" >Desktop
                 </string>
                 <string name="lbl_dialog_alert" >Hinweis
                 </string>
-                <string name="menu_exit" >Beenden
+                <string name="pref_logcat_sry" >System-Logging aktivieren. Hilfreich, um dem Entwickler bei der Problembehebung zu helfen
+                </string>
+                <string name="menu_home" >Neuigkeiten
                 </string>
                 <string name="pref_cat_general" >Allgemein
+                </string>
+                <string name="menu_exit" >Beenden
                 </string>
 
                 <array name="prefs_mobile_site_list" >

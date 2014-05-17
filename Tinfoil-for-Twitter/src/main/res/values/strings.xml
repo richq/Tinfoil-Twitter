@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-    Copyright (C) 2013 Daniel Velazco
+    Copyright (C) 2014 James Vento
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -76,7 +76,7 @@
     </array>
 
     <string name="pref_about">About</string>
-    <string name="pref_about_sry">Written by Daniel Velazco. Click here for more information.</string>
+    <string name="pref_about_sry">Written by James Vento. Click here for more information.</string>
     <!-- End preferences -->
 
     <!-- Orbot related strings -->
@@ -85,21 +85,23 @@
     <string name="orbot_not_running_start_it_question">Orbot doesn\'t appear to be running. Would you like to start it up and connect to Tor?</string>
 
     <!-- Text used on the "about" dialog -->
-    <string name="txt_checkins_disables">\nFacebook is trying to access your location.\n
+    <string name="txt_checkins_disables">\nTwitter is trying to access your location.\n
 \nMost likely you are trying to \"Check-in\" to a specific place. While Tinfoil has optional permissions used for this, it is disabled by default.\n
 \nYou can enable this feature by going to the Preferences and checking the option that says \"Allow Check-ins.\"\n
 \nTinfoil only shares \"Coarse location\", this doesn\'t use the GPS, only Network and Wi-fi location in order to save battery.\n
 \n</string>
 
     <!-- Text used on the "about" dialog -->
-    <string name="txt_about">\nDeveloped by Daniel Velazco.
-\nvelazcod@gmail.com
+    <string name="txt_about">\nDeveloped by James Vento.
+\ntuckervento@gmail.com\n
+\nForked from Tinfoil for Facebook, developed by Daniel Velazco.
+\nhttps://play.google.com/store/apps/details?id=com.danvelazco.fbwrapper
 \nhttp://www.danvelazco.com\n
 \n
 \nSource code:
-\nhttps://github.com/velazcod/Tinfoil-Facebook\n
+\nhttps://github.com/tuckervento/Tinfoil-Twitter\n
 \n
-\nThis app is for those users that require a Tinfoil Hat when logging in to Facebook. It creates a sandbox for facebook\'s mobile site. Requires INTERNET permissions, and if you are skeptic about it, feel free to check the source code listed above. Coarse location permissions are required but location is not used unless you turn \"Allow Check-ins\" in the preferences.\n
+\nThis app is for those users that require a Tinfoil Hat when logging in to Twitter. It creates a sandbox for Twitter\'s mobile site. Requires INTERNET permissions, and if you are skeptic about it, feel free to check the source code listed above. Coarse location permissions are required but location is not used unless you turn \"Allow Check-ins\" in the preferences.\n
 \n</string>
 
 </resources>

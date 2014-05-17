@@ -21,7 +21,7 @@ import com.mill_e.twitterwrapper.util.Logger;
 import com.mill_e.twitterwrapper.util.OrbotHelper;
 
 /**
- * Facebook web wrapper activity.
+ * Twitter web wrapper activity.
  */
 public class TwitterWrapper extends BaseTwitterWebViewActivity {
 
@@ -76,7 +76,7 @@ public class TwitterWrapper extends BaseTwitterWebViewActivity {
         // If we have a valid URL that was shared to us, open the sharer
         if (sharedUrl != null) {
             if (!sharedUrl.equals("")) {
-                String formattedSharedUrl = String.format(mDomainToUse + URL_PAGE_SHARE_LINKS,
+                String formattedSharedUrl = String.format(INIT_URL_DESKTOP + URL_PAGE_SHARE_LINKS,
                         sharedUrl, sharedSubject);
                 Logger.d(LOG_TAG, "Loading the sharer page...");
                 loadNewPage(Uri.parse(formattedSharedUrl).toString());

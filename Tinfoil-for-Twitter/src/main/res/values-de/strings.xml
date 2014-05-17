@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-    Copyright (C) 2013 Daniel Velazco
+    Copyright (C) 2014 James Vento
 
     German Translation (C) 2013 averageapps
 
@@ -19,7 +19,7 @@
 <resources>
 
     <!-- App name -->
-    <string name="app_name">Tinfoil für Facebook</string>
+    <string name="app_name">Tinfoil für Twitter</string>
     <string name="app_name_short">Tinfoil</string>
 
     <!-- Labels -->
@@ -66,23 +66,25 @@
     <string name="pref_logcat">System-Logging</string>
     <string name="pref_logcat_sry">System-Logging aktivieren. Hilfreich, um dem Entwickler bei der Problembehebung zu helfen</string>
     <string name="pref_about">Über</string>
-    <string name="pref_about_sry">Geschrieben von Daniel Velazco. Hier klicken für weitere Infos.</string>
+    <string name="pref_about_sry">Geschrieben von James Vento. Hier klicken für weitere Infos.</string>
     <!-- End preferences -->
     <!-- Text used on the "about" dialog -->
-    <string name="txt_checkins_disables">\nFacebook versucht, auf deinen Standort zuzugreifen.\n
+    <string name="txt_checkins_disables">\nTwitter versucht, auf deinen Standort zuzugreifen.\n
 \nWahrscheinlich versuchst du gerade an einem bestimmten Ort \"einzuchecken\". Tinfoil hat eine optionale Berechtigung dafür, die aber standardmäßig deaktiviert ist.\n
 \nDu kannst diese Funktion in den Einstellungen unter \"Einchecken erlauben\" aktivieren.\n
 \nTinfoil bestimmt den Standort nur durch W-LAN und Funknetz, um Akku zu sparen. Das ist allerdings nicht so genau wie die echte GPS-Position.\n
 \n</string>
     <!-- Text used on the "about" dialog -->
-    <string name="txt_about">\nEntwickelt von Daniel Velazco.
-\nvelazcod@gmail.com
+    <string name="txt_about">\nEntwickelt von James Vento.
+\ntuckervento@gmail.com\n
+\nForked from Tinfoil für Facebook, entwickelt von  Daniel Velazco.
+\nhttps://play.google.com/store/apps/details?id=com.danvelazco.fbwrapper
 \nhttp://www.danvelazco.com\n
 \n
 \nQuellcode:
 \nhttps://github.com/velazcod/Tinfoil-Facebook\n
 \n
-\nDiese App ist für Leute, die einen Aluhut (englisch: \"tin foil hat\") für Facebook brauchen. Sie benutzt eine Sandbox (isolierter Bereich ohne Zugriff auf persönliche Daten, z.B. Adressbuch), in der die mobile Internetseite von Facebook läuft. Benötigt die Berechtigung für Internetzugriff, und wer skeptisch ist, kann sich gerne den Quellcode ansehen (s. oben). Die Berechtigung für Standortbestimmung wird nur benutzt, falls \"Einchecken erlauben\" in den Einstellungen aktiviert ist.\n
+\nDiese App ist für Leute, die einen Aluhut (englisch: \"tin foil hat\") für Twitter brauchen. Sie benutzt eine Sandbox (isolierter Bereich ohne Zugriff auf persönliche Daten, z.B. Adressbuch), in der die mobile Internetseite von Twitter läuft. Benötigt die Berechtigung für Internetzugriff, und wer skeptisch ist, kann sich gerne den Quellcode ansehen (s. oben). Die Berechtigung für Standortbestimmung wird nur benutzt, falls \"Einchecken erlauben\" in den Einstellungen aktiviert ist.\n
 \n</string>
 
 </resources>

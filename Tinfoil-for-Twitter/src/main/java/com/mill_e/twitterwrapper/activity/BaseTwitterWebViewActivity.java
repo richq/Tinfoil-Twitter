@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2013 Daniel Velazco
+ * Copyright (C) 2014 James Vento
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -72,7 +72,7 @@ public abstract class BaseTwitterWebViewActivity extends Activity implements
 
     // URL for Sharing Links
     // u = url & t = title
-    protected final static String URL_PAGE_SHARE_LINKS = "/intent/tweet?url=%s&text=%s";
+    protected final static String URL_PAGE_SHARE_LINKS = "/intent/tweet?url=%s&text=\"%s\"";
 
     // Desktop user agent (Google Chrome's user agent from a MacBook running 10.9.1
     protected static final String USER_AGENT_DESKTOP = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_1) " +
