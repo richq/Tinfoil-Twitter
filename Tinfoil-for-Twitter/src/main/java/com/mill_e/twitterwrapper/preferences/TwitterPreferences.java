@@ -122,7 +122,7 @@ public class TwitterPreferences extends PreferenceActivity {
         AlertDialog alertDialog = new AlertDialog.Builder(this).create();
         alertDialog.setTitle(getString(R.string.menu_about));
         alertDialog.setMessage(getString(R.string.txt_about));
-        alertDialog.setIcon(R.drawable.ic_launcher);
+        alertDialog.setIcon(R.drawable.tuckerapp);
         alertDialog.setButton(DialogInterface.BUTTON_NEUTRAL,
                 getString(R.string.lbl_dialog_close),
                 new DialogInterface.OnClickListener() {

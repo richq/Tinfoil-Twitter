@@ -24,6 +24,15 @@ android {
         targetSdkVersion 19
     }
 
+    signingConfigs {
+        release {
+            storeFile file(System.getenv("AND_KEYSTORE"))
+            storePassword System.getenv("AND_KEYSTORE_PWD")
+            keyAlias System.getenv("AND_KEYSTORE_TWTR_ALIAS")
+            keyPassword System.getenv("AND_KEYSTORE_TWTR_PWD")
+        }
+    }
+
     buildTypes {
 
         debug {
@@ -34,6 +43,7 @@ android {
         release {
             runProguard false
             debuggable false
+            signingConfig signingConfigs.release
         }
 
     }
