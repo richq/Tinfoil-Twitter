@@ -201,8 +201,11 @@ public abstract class BaseTwitterWebViewActivity extends Activity implements
         // Un-register the connectivity changed receiver
         unregisterReceiver(mConnectivityReceiver);
 
+        if (mWebView != null) { mWebView.onPause(); }
+
         // Stop synchronizing the CookieSyncManager
-        mCookieSyncManager.stopSync();
+        if (mCookieSyncManager != null) { mCookieSyncManager.stopSync(); }
+
 
         super.onPause();
     }
