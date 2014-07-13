@@ -307,6 +307,16 @@ public abstract class BaseTwitterWebViewActivity extends Activity implements
     }
 
     /**
+     * Blocks network from loading images using web settings.
+     * @param blockImages {@link boolean} used to set loading of images
+     */
+    protected void setBlockImages(boolean blockImages) {
+        if (mWebSettings != null) {
+            mWebSettings.setBlockNetworkImage(blockImages);
+        }
+    }
+
+    /**
      * Used to change the geolocation flag.
      *
      * @param allow {@link boolean} true if the use of

@@ -202,14 +202,16 @@ public class TwitterWrapper extends BaseTwitterWebViewActivity {
 
         // Get the URL to load, check-in and proxy settings
         boolean anyDomain = mSharedPreferences.getBoolean(TwitterPreferences.OPEN_LINKS_INSIDE, false);
+        boolean blockImages = mSharedPreferences.getBoolean(TwitterPreferences.BLOCK_IMAGES, false);
         boolean allowCheckins = mSharedPreferences.getBoolean(TwitterPreferences.ALLOW_CHECKINS, false);
         boolean enableProxy = mSharedPreferences.getBoolean(TwitterPreferences.KEY_PROXY_ENABLED, false);
         String proxyHost = mSharedPreferences.getString(TwitterPreferences.KEY_PROXY_HOST, null);
         String proxyPort = mSharedPreferences.getString(TwitterPreferences.KEY_PROXY_PORT, null);
 
-        // Set the flags for loading URLs and allowing geolocation
+        // Set the flags for loading URLs and allowing geolocation, and loading images
         setAllowCheckins(allowCheckins);
         setAllowAnyDomain(anyDomain);
+        setBlockImages(blockImages);
 
         if (enableProxy && !TextUtils.isEmpty(proxyHost) && !TextUtils.isEmpty(proxyPort)) {
             int proxyPortInt = -1;
