@@ -73,15 +73,11 @@
         <item>Automatisch</item>
         <item>Mobile Version</item>
         <item>Desktop-Version</item>
-        <item>Minimale Version</item>
-        <item>Facebook Zero</item>
     </array>
     <array name="prefs_mobile_site_list_values">
         <item>auto</item>
         <item>mobile</item>
         <item>desktop</item>
-        <item>basic</item>
-        <item>zero</item>
     </array>
 
     <string name="pref_logcat">System-Logging</string>
